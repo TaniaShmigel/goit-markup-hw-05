@@ -101,7 +101,8 @@ img {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   text-decoration: none;
-  transition: var(--animation);
+  transition-property: color;
+  transition-duration: var(--animation);
 }
 
 /* Site nav */
@@ -164,8 +165,8 @@ img {
   color: var(--primary-text-color);
   line-height: calc(16 / 14);
   text-decoration: none;
-
-  transition: var(--animation);
+  transition-property: color;
+  transition-duration: var(--animation);
 }
 
 .contact-icon {
@@ -226,7 +227,8 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-  transition: var(--animation);
+  transition-property: background-color;
+  transition-duration: var(--animation);
 }
 
 .hero-btn:hover,
@@ -328,10 +330,8 @@ img {
   left: 0;
 
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: center;
-  padding-top: 27px;
-  padding-bottom: 27px;
   width: 370px;
   height: 70px;
 
@@ -403,11 +403,14 @@ img {
 
   background-color: var(--primery-white-color);
   border-radius: 50%;
-  transition: var(--animation);
+  transition-property: background-color;
+  transition-duration: var(--animation);
 }
 
 .social-icon {
   fill: var(--primery-icon-color);
+  transition-property: fill;
+  transition-duration: var(--animation);
 }
 
 .social-link:hover,
@@ -436,7 +439,8 @@ img {
   width: 170px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  transition: var(--animation);
+  transition-property: border;
+  transition-duration: var(--animation);
 }
 
 .customers-link:hover,
@@ -451,6 +455,8 @@ img {
 
 .customers-icon {
   fill: #afb1b8;
+  transition-property: fill;
+  transition-duration: var(--animation);
 }
 
 /* Footer */
@@ -501,7 +507,8 @@ img {
   line-height: calc(24 / 14);
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  transition: var(--animation);
+  transition-property: color;
+  transition-duration: var(--animation);
 }
 
 .footer-contact:hover,
@@ -541,7 +548,8 @@ img {
 
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  transition: var(--animation);
+  transition-property: background-color;
+  transition-duration: var(--animation);
 }
 
 .socials-footer-link:hover,
@@ -616,9 +624,12 @@ img {
   letter-spacing: 0.03em;
 
   color: var(--secondary-text-color);
+
+  border-radius: 4px;
   cursor: pointer;
   border: transparent;
-  transition: var(--animation);
+  transition-property: color, background-color, box-shadow;
+  transition-duration: var(--animation);
 }
 
 .project-btn:hover,
@@ -627,7 +638,6 @@ img {
   color: var(--primery-white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
 }
 
 /* Project*/
@@ -641,7 +651,8 @@ img {
 .link-project {
   display: block;
   text-decoration: none;
-  transition: var(--animation);
+  transition-property: box-shadow;
+  transition-duration: var(--animation);
 }
 
 .project-item {
@@ -691,7 +702,7 @@ img {
   left: 0;
 
   transform: translateY(101%);
-  transition: transform var(--animation);
+  transition: var(--animation);
 
   padding: 63px 24px;
   font-weight: 400;
@@ -705,6 +716,7 @@ img {
   height: 100%;
 }
 
-.link-project:hover .overlay {
+.link-project:hover .overlay,
+.link-project:focus .overlay {
   transform: translateX(0);
 }
