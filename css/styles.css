@@ -590,14 +590,17 @@ img {
   background-color: var(--primery-white-color);
 }
 
-.modal-icon {
+.modal-btn {
   position: absolute;
-  top: 0;
-  right: 0;
-  padding: 6px 6px;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  /* padding: 6px 6px;
   margin-top: 8px;
-  margin-right: 8px;
-
+  margin-right: 8px; */
+background-color: var(--primery-white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
